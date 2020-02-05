@@ -49,7 +49,7 @@ class WalkthroughState extends State<Walkthrough>
       padding: EdgeInsets.all(20.0),
       child: Material(
         animationDuration: Duration(milliseconds: 500),
-        elevation: 2.0,
+        elevation: 0.0,
         borderRadius: BorderRadius.all(Radius.circular(5.0)),
         child: Column(
           mainAxisSize: MainAxisSize.min,
@@ -57,7 +57,7 @@ class WalkthroughState extends State<Walkthrough>
           children: <Widget>[
             new Transform(
               transform:
-                  new Matrix4.translationValues(animation.value, 0.0, 0.0),
+                  new Matrix4.translationValues(0, 0, 0),
               child: new Text(
                 widget.title,
                 style: TextStyle(
@@ -67,7 +67,7 @@ class WalkthroughState extends State<Walkthrough>
               ),
             ),
             new Transform(
-              transform: new Matrix4.translationValues(animation.value, 0, 0),
+              transform: new Matrix4.translationValues(0, 0, 0),
               child: new Text(widget.content,
                   softWrap: true,
                   textAlign: TextAlign.center,

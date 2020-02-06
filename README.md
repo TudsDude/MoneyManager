@@ -1,4 +1,4 @@
-# nagarro_cash_app
+# MoneyManager
 
 A new Flutter project.
 
